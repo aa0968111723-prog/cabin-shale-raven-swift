@@ -2,7 +2,7 @@ export type VlmResult = {
   ok: true;
   text: string;
   model: string;
-  provider: "xai";
+  provider: "xai" | "fal";
 } | {
   ok: false;
   code: "MODEL_NOT_AVAILABLE" | "JOB_FAILED";
